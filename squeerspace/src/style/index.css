@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+:root {
+    /* Colors */
+    --color-orange: #ed7d31;
+    --color-lightBrown: #6c5f5b;
+    --color-brown: #4f4a45;
+    --color-lightBeige: #f6f1ee;
+    --color-blue: #30475e;
+    --color-lightBlue: #2d4059;
+    --button-color: #ed7d31;
+
+    /* Padding */
+    --padding-s: 20px;
+    --padding-m: 30px;
+    --padding-l: 40px;
+
+    /* Margin */
+    --margin-s: 15px;
+    --margin-m: 30px;
+    --margin-l: 45px;
+
+    /* Flex gap */
+    --flexGap-s: 5px;
+    --flexGap-m: 15px;
+    --flexGap-l: 25px;
+
+    /* Behavior */
+    --button-hover: #ffa260;
+
+    /* Card */
+    --card-height: 45vh;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+.noto-sans {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+body {
+    background-color: var(--color-lightBlue);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-s);
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: var(--flexGap-l);
+    height: 100%;
+}
+
+.link {
+    color: var(--color-lightBeige);
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-size: medium;
+}
+
+.link:hover {
+    color: var(--color-orange);
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto;
+}
+
+
+.item-gallery-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--flexGap-m);
+}
+
+.card-container {
+    background: var(--color-blue);
+    padding: 3px;
+    max-width: 350px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0;
+}
+
+.card-image {
+    max-width: 250px;
+}
+
+.card-header {
+    font-family: "Noto Sans", sans-serif;
+    font-size: medium;
+    max-width: 100%;
+    
+}
+
+.card-content {
+    height: fit-content;
+}
+
+.card-p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: small;
+}
+
+.card-button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.card-button:hover,
+.card-button:focus {
+    border-color: var(--button-hover);
+    color: var(--color-orange);
+    transition: 0.40s;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--button-hover);
+    transform: translateY(-0.25em);
+}
