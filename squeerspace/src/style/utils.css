@@ -1,0 +1,16 @@
+.error {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+    margin: 0 auto;
+
+    width: 500px;
+
+    color: white;
+    background-color: #a8131341;
+
+    border: 1px solid rgba(110, 108, 108, 0.589);
+    border-radius: 25px;
+
+}

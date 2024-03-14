@@ -7,19 +7,35 @@
   <title>Title</title>
  </head>
  <body>
-    <header>
-        <div>
-            <img src="../src/assets/SquareEyes_Logo.png" class="logo" />
-        </div>
-        <div>
-            <nav>
-                <a href="../index.html" class="link">Home</a>
-                <a href="./arcive.html" class="link">All videos</a>
-                <a href="./about.html" class="link">About</a>
-                <a href="./contact.html" class="link">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <header>
+   <nav>
+    <a href="../index.html">Home</a>
+    <a href="./arcive.html">Movies</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./checkout.html"><img src="../src/assets/icons/Shopping bag.svg" class="nav-icon" /></a>
+   </nav>
+  </header>
+  <main class="big-gap">
+   <section class="section-top" id="information-section"></section>
+   <section class="section-botoom" id="video-section">
+    <h2>Trailer</h2>
+    <iframe
+     width="560"
+     height="315"
+     src="https://www.youtube.com/embed/3WBKwSVA9hM?si=svYJsSAo3rbIy1or"
+     title="YouTube video player"
+     frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     allowfullscreen
+    ></iframe>
+   </section>
+  </main>
+  <footer>
+   <p>© SquareEyes 2024</p>
+   <a href="www.facebook.com" target="_blank"><img src="../src/assets/icons/Vector.svg" /></a>
+  </footer>
   <script src="../src/js/index.js"></script>
+  <script src="../src/js/api/productFetch.js" type="module"></script>
  </body>
 </html>

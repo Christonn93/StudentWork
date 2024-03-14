@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./src/style/index.css" rel="stylesheet" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./src/style/index.css" rel="stylesheet" />
+  <title>Title</title>
+ </head>
 
-    <title>Title</title>
-</head>
+ <body>
+  <div class="top-section">
+   <header>
+    <nav>
+     <a href="./pages/arcive.html">Movies</a>
+     <a href="./pages/about.html">About</a>
+     <a href="./pages/contact.html">Contact</a>
+     <a href="./pages/checkout.html"><img src="./src/assets/icons/Shopping bag.svg" class="nav-icon" /></a>
+    </nav>
+   </header>
+   <div class="hero-container">
+    <h1>
+     Watch movies,<br />
+     anywhere
+    </h1>
+    <p>Shop the perfect movie to watch tonight for free.</p>
+    <div>
+     <button class="button-default button-slanted">Start shopping</button>
+    </div>
+   </div>
+  </div>
 
-<body>
-    <header>
-        <div>
-            <img src="./src/assets/SquareEyes_Logo.png" class="logo" />
-        </div>
-        <div>
-            <nav>
-                <a href="./index.html" class="link">Home</a>
-                <a href="pages/arcive.html" class="link">All videos</a>
-                <a href="pages/about.html" class="link">About</a>
-                <a href="pages/contact.html" class="link">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <main>
+   <h2 class="teal-text">Need something to watch?<br />Here’s our top picks</h2>
+   <section id="recommendation" class="item-container"></section>
+   <section class="advert">
+    <h3>
+     You bring your video,<br />
+     we’ll do the rest.
+    </h3>
+    <article>
+     <p>Keep a single, unified list for any movie or TV show you hear about, on any service—even theater releases!</p>
+    </article>
+    <a href="" class="link">VIEW MORE ></a>
+   </section>
+  </main>
 
-    <main>
+  <footer>
+   <p>© SquareEyes 2024</p>
+   <a href="www.facebook.com" target="_blank"><img src="./src/assets/icons/Vector.svg" /></a>
+  </footer>
 
-
-    </main>
-
-    <script src="./src/js/index.js"></script>
-    <script src="./src//js/movieFetch.js"></script>
-</body>
-
+  <script src="./src/js/index.js"></script>
+  <script src="./src/js/api/fetchHome.js" type="module"></script>
+ </body>
 </html>

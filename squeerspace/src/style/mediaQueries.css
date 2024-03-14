@@ -1,0 +1,14 @@
+@media (max-width: 642px) {
+
+    .top-section {
+        background-image: url(https://static1.srcdn.com/wordpress/wp-content/uploads/2023/04/hypnotic-full-poster-ben-affleck-exclusive.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        position: relative;
+        z-index: -99;
+        height: 200px;
+    }
+
+}
